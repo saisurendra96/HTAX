@@ -1,0 +1,207 @@
+Operating system: Linux
+                  0.0.0 Linux 3.10.0-1160.90.1.el7.x86_64 #1 SMP Thu May 4 15:21:22 UTC 2023 x86_64
+CPU: x86
+     GenuineIntel family 6 model 62 stepping 4
+     1 CPU
+
+GPU: UNKNOWN
+
+Crash reason:  DUMP_REQUESTED
+Crash address: 0xf72d537d
+Process uptime: not available
+
+Thread 2 (crashed)
+ 0  libcbreakpad.so + 0x2e37d
+    eip = 0xf72d537d   esp = 0x0083849e   ebp = 0xf14fc018   ebx = 0xf7308000
+    esi = 0xf14fc0c8   edi = 0xf14fc048   eax = 0x00000000   ecx = 0x00000001
+    edx = 0x00000000   efl = 0xf72afc20
+    Found by: given as instruction pointer in context
+ 1  libcbreakpad.so + 0x2c665
+    eip = 0xf72d3665   esp = 0xf14fc020   ebp = 0xf14fc178
+    Found by: previous frame's frame pointer
+ 2  xmsim + 0x1436c02
+    eip = 0x0947ec02   esp = 0xf14fc180   ebp = 0x00000000
+    Found by: previous frame's frame pointer
+
+Thread 0
+ 0  linux-gate.so + 0x430
+    eip = 0xf7759430   esp = 0xf6b4f6d0   ebp = 0xf1cbbb40   ebx = 0xf1cbbba8
+    esi = 0x00000000   edi = 0xf7733000   eax = 0xfffffe00   ecx = 0x00000000
+    edx = 0x00001956   efl = 0x00200246
+    Found by: given as instruction pointer in context
+ 1  libpthread-2.17.so + 0x7dc5
+    eip = 0xf7722dc5   esp = 0xf6b4f6e0   ebp = 0xf1cbbb40
+    Found by: stack scanning
+ 2  libpthread-2.17.so + 0x7d00
+    eip = 0xf7722d00   esp = 0xf6b4f6e8   ebp = 0xf6b4f700
+    Found by: stack scanning
+ 3  0xf1cbbd64
+    eip = 0xf1cbbd64   esp = 0xf6b4f708   ebp = 0xf7722d00
+    Found by: previous frame's frame pointer
+ 4  libtbb.so.2 + 0x1edc
+    eip = 0xf1f07edc   esp = 0xf6b4f718   ebp = 0xf6b4f730
+    Found by: stack scanning
+
+Thread 1
+ 0  linux-gate.so + 0x430
+    eip = 0xf7759430   esp = 0xf1cb994c   ebp = 0x00000000   ebx = 0xf1f469d0
+    esi = 0xf1e9be80   edi = 0x01dd277b   eax = 0x00000000   ecx = 0x2f6943cd
+    edx = 0x00000008   efl = 0x00200246
+    Found by: given as instruction pointer in context
+ 1  libc-2.17.so + 0xdf37c
+    eip = 0xf73f337c   esp = 0xf1cb995c   ebp = 0x00000000
+    Found by: stack scanning
+ 2  libtbb.so.2 + 0x25a0c
+    eip = 0xf1f2ba0c   esp = 0xf1cb9960   ebp = 0x00000000
+    Found by: stack scanning
+ 3  libtbbshm.so + 0x137f7
+    eip = 0xf1f607f7   esp = 0xf1cb9974   ebp = 0x00000000
+    Found by: stack scanning
+ 4  libtbb.so.2 + 0x409d0
+    eip = 0xf1f469d0   esp = 0xf1cb9978   ebp = 0x00000000
+    Found by: stack scanning
+ 5  libtbbshm.so + 0x13354
+    eip = 0xf1f60354   esp = 0xf1cb9980   ebp = 0x00000000
+    Found by: stack scanning
+ 6  libtbb.so.2 + 0x409d0
+    eip = 0xf1f469d0   esp = 0xf1cb9990   ebp = 0x00000000
+    Found by: stack scanning
+ 7  libtbb.so.2 + 0x409d0
+    eip = 0xf1f469d0   esp = 0xf1cb99a4   ebp = 0x00000000
+    Found by: stack scanning
+ 8  libtbb.so.2 + 0x409d0
+    eip = 0xf1f469d0   esp = 0xf1cb99e4   ebp = 0x00000000
+    Found by: stack scanning
+ 9  libtbb.so.2 + 0x24e0e
+    eip = 0xf1f2ae0e   esp = 0xf1cb99f0   ebp = 0x00000000
+    Found by: stack scanning
+10  libtbb.so.2 + 0x409d0
+    eip = 0xf1f469d0   esp = 0xf1cb9a04   ebp = 0x00000000
+    Found by: stack scanning
+11  libtbb.so.2 + 0x13b7e
+    eip = 0xf1f19b7e   esp = 0xf1cb9a10   ebp = 0x00000000
+    Found by: stack scanning
+12  libtbb.so.2 + 0x409d0
+    eip = 0xf1f469d0   esp = 0xf1cb9a2c   ebp = 0x00000000
+    Found by: stack scanning
+13  libtbb.so.2 + 0x409d0
+    eip = 0xf1f469d0   esp = 0xf1cb9a48   ebp = 0xf1cb9acc
+    Found by: stack scanning
+14  libtbb.so.2 + 0x409d0
+    eip = 0xf1f469d0   esp = 0xf1cb9ad4   ebp = 0xf1cb9af4
+    Found by: previous frame's frame pointer
+
+Thread 3
+ 0  linux-gate.so + 0x430
+    eip = 0xf7759430   esp = 0xf12fbc9c   ebp = 0x00000000   ebx = 0xf1e9fd18
+    esi = 0x00000000   edi = 0x00000000   eax = 0xfffffe00   ecx = 0x00000000
+    edx = 0x00000002   efl = 0x00200246
+    Found by: given as instruction pointer in context
+ 1  libc-2.17.so + 0xf7d57
+    eip = 0xf740bd57   esp = 0xf12fbcac   ebp = 0x00000000
+    Found by: stack scanning
+ 2  libtbb.so.2 + 0x409d0
+    eip = 0xf1f469d0   esp = 0xf12fbcb0   ebp = 0x00000000
+    Found by: stack scanning
+ 3  libtbb.so.2 + 0x18a51
+    eip = 0xf1f1ea51   esp = 0xf12fbcc0   ebp = 0x00000000
+    Found by: stack scanning
+ 4  libtbb.so.2 + 0x409d0
+    eip = 0xf1f469d0   esp = 0xf12fbd00   ebp = 0x00000000
+    Found by: stack scanning
+ 5  libtbb.so.2 + 0x409d0
+    eip = 0xf1f469d0   esp = 0xf12fbd0c   ebp = 0xf12fbde8
+    Found by: stack scanning
+ 6  libc-2.17.so + 0xfe27e
+    eip = 0xf741227e   esp = 0xf12fbdf0   ebp = 0x00000000
+    Found by: previous frame's frame pointer
+
+Thread 4
+ 0  linux-gate.so + 0x430
+    eip = 0xf7759430   esp = 0xf0efdc9c   ebp = 0x00000000   ebx = 0xf1e9fc18
+    esi = 0x00000000   edi = 0x00000000   eax = 0xfffffe00   ecx = 0x00000000
+    edx = 0x00000002   efl = 0x00200246
+    Found by: given as instruction pointer in context
+ 1  libc-2.17.so + 0xf7d57
+    eip = 0xf740bd57   esp = 0xf0efdcac   ebp = 0x00000000
+    Found by: stack scanning
+ 2  libtbb.so.2 + 0x409d0
+    eip = 0xf1f469d0   esp = 0xf0efdcb0   ebp = 0x00000000
+    Found by: stack scanning
+ 3  libtbb.so.2 + 0x18a51
+    eip = 0xf1f1ea51   esp = 0xf0efdcc0   ebp = 0x00000000
+    Found by: stack scanning
+ 4  libtbb.so.2 + 0x409d0
+    eip = 0xf1f469d0   esp = 0xf0efdd00   ebp = 0x00000000
+    Found by: stack scanning
+ 5  libtbb.so.2 + 0x409d0
+    eip = 0xf1f469d0   esp = 0xf0efdd0c   ebp = 0xf0efdde8
+    Found by: stack scanning
+ 6  libc-2.17.so + 0xfe27e
+    eip = 0xf741227e   esp = 0xf0efddf0   ebp = 0x00000000
+    Found by: previous frame's frame pointer
+
+Loaded modules:
+0x08048000 - 0x0ade7fff  xmsim  ???  (main)  (WARNING: No symbols, xmsim, D55096D11D2BEF3D2C7CD1052B33798A0)
+0xef304000 - 0xef8d8fff  libucis.so  ???
+0xf1090000 - 0xf10f9fff  libuvmapi_sv.so  ???
+0xf10fa000 - 0xf10fcfff  libuvmapi_sv.so  ???
+0xf1839000 - 0xf18b4fff  libuvmapi_generic.so  ???
+0xf18b5000 - 0xf18b7fff  libuvmapi_generic.so  ???
+0xf1ece000 - 0xf1ef3fff  libtbbmalloc.so.2  ???
+0xf1f06000 - 0xf1f49fff  libtbb.so.2  ???  (WARNING: No symbols, libtbb.so.2, 226CBD11F991919CDA39E8BC5EAC151B0)
+0xf1f4d000 - 0xf1f69fff  libtbbshm.so  ???  (WARNING: No symbols, libtbbshm.so, 7F0F9CD5A1CFFE6C2B2D7665C67265F90)
+0xf2a93000 - 0xf2aa8fff  libz_sh.so  ???
+0xf2aa9000 - 0xf2aabfff  libz_sh.so  ???
+0xf4032000 - 0xf4041fff  waves.dsn  ???
+0xf41d0000 - 0xf4271fff  libngen.so  ???
+0xf42b7000 - 0xf448bfff  libstdc++.so.6.0.28  ???
+0xf448e000 - 0xf44a5fff  libsdi-verilog-nld.so  ???
+0xf44a6000 - 0xf44a8fff  libsdi-verilog-nld.so  ???
+0xf44a9000 - 0xf452afff  libdwapi.so  ???
+0xf456e000 - 0xf5646fff  librnc.so  ???
+0xf6c0e000 - 0xf6c14fff  gconv-modules.cache  ???
+0xf6c15000 - 0xf6c1cfff  libxdt.so  ???
+0xf6c1f000 - 0xf6c3ffff  libsdi2-sst2-nld.so  ???
+0xf6c40000 - 0xf6df1fff  libStrapNC.so  ???
+0xf6df2000 - 0xf6e1dfff  libStrapNC.so  ???
+0xf6e28000 - 0xf6ec5fff  libdcapi.so  ???
+0xf6ec7000 - 0xf70c6fff  locale-archive  ???
+0xf70c7000 - 0xf70d9fff  libbz2.so.1.0.6  ???
+0xf70da000 - 0xf7103fff  liblzma.so.5.2.2  ???
+0xf7104000 - 0xf711afff  libz.so.1.2.7  ???
+0xf711b000 - 0xf7135fff  libelf-0.176.so  ???
+0xf7136000 - 0xf713bfff  libattr.so.1.1.0  ???
+0xf713c000 - 0xf7196fff  libdw-0.176.so  ???
+0xf7197000 - 0xf719ffff  librt-2.17.so  ???
+0xf71a0000 - 0xf71b4fff  libnss_myhostname.so.2  ???
+0xf71b5000 - 0xf71eefff  libnss_centrifydc.so.2  ???
+0xf71ef000 - 0xf7205fff  libresolv-2.17.so  ???
+0xf7208000 - 0xf720efff  libnss_dns-2.17.so  ???
+0xf7211000 - 0xf7216fff  libuvmdpi.so  ???
+0xf7217000 - 0xf721bfff  _sv_export.so  ???
+0xf721c000 - 0xf7226fff  libuvmpli.so  ???
+0xf7227000 - 0xf7230fff  libunicovdirmgr.so  ???
+0xf7272000 - 0xf72a6fff  libxmjudy.so.1.0.3  ???
+0xf72a7000 - 0xf7309fff  libcbreakpad.so  ???  (WARNING: No symbols, libcbreakpad.so, 6CC4281141FC2AFC347B75995AA3D17A0)
+0xf7314000 - 0xf74d7fff  libc-2.17.so  ???  (WARNING: No symbols, libc-2.17.so, 096514C244D0321C893889B0D3C2B2320)
+0xf74d8000 - 0xf74dbfff  libc-2.17.so  ???
+0xf74df000 - 0xf74fbfff  libgcc_s.so.1  ???
+0xf74fc000 - 0xf76d0fff  libstdc++.so.6.0.28  ???
+0xf76d3000 - 0xf7714fff  libm-2.17.so  ???
+0xf7716000 - 0xf771afff  libdl-2.17.so  ???
+0xf771b000 - 0xf7733fff  libpthread-2.17.so  ???  (WARNING: No symbols, libpthread-2.17.so, 16742DA9400989F9E07E88FBEAA5C82A0)
+0xf773a000 - 0xf7746fff  libnss_files-2.17.so  ???
+0xf7752000 - 0xf7757fff  libcap.so.2.22  ???
+0xf7759000 - 0xf7759fff  linux-gate.so  ???  (WARNING: No symbols, linux-gate.so, 88EC59E9569CB136F1EB8780EDF6D55A0)
+0xf775a000 - 0xf777dfff  ld-2.17.so  ???
+
+******BACKTRACE*****
+vserror (xmsim) [0x947ec02]
+serror (xmsim) [0x94803ca]
+sv_seghandler_aux (xmsim) [0x86dd4df]
+sv_seghandler (xmsim) [0x86ddae3]
+convert_abreg_to_sst2_packed_vec (xmsim) [0x89995d4]
+sslu_shm_dump_value_ab (xmsim) [0x8934e84]
+sslu_shm_dump_transition (xmsim) [0x8937bce]
+******BACKTRACE END*****
